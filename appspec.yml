@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: server.js
-    destination: /var/www/
+    destination: /opt/back-end
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies.sh
