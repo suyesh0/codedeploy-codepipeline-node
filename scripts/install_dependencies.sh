@@ -2,8 +2,13 @@
 # update yum just in case
 sudo apt-get update -y
 # get node into yum
-curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
-# install node and npm in one linesudo
-sudo apt-get -y nodejs
+
+# add nodejs 10 ppa (personal package archive) from nodesource
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+
+# install nodejs and npm
+sudo apt-get install -y nodejs
+
 # install pm2 to restart node app
-npm i -g pm2@2.4.3
+# install pm2 with npm
+sudo npm install -g pm2
