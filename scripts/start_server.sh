@@ -7,5 +7,5 @@
 #sudo pm2 start /var/www/server.js -i 0 --name "node-app"
 cd /opt/back-end
 sudo npm install
-sudo pm2 start server.js
+sudo pm2 start server.js -f
 
